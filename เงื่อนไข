@@ -1,0 +1,13 @@
+UPDATE Employee
+SET yearborn = '1985-05-15'
+WHERE EmpID = 'E001';
+
+UPDATE Employee
+SET yearborn = '1992-12-28'
+WHERE EmpID = 'E302';
+--เงื่อนไขที่มากกว่าจะแสดงขึ้นถูกต้อง
+
+UPDATE Employee
+SET yearborn = '1955-03-10'  -- ค่าที่น้อยกว่า 1960
+WHERE EmpID = 'E003';
+--เงื่อนไขที่น้อยกว่าจะไม่แสดง
